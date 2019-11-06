@@ -13,8 +13,11 @@ while True:
 
     if res < the_correct_nr:
         print('Too low!')
-    elif res > the_correct_nr:
+        continue
+
+    if res > the_correct_nr:
         print('Too high!')
-    else:
-        print('Yes, you would appear to be right. The nr is: ' + response)
-        break
+        continue
+
+    print('Yes, you would appear to be right. The nr is: ' + response)
+    break
